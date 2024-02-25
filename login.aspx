@@ -1,0 +1,61 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="login.aspx.cs" Inherits="airline.login" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Login Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <style type="text/css">
+        .bg{
+            background-image: linear-gradient(90deg,#12c2e9,#c471ed,#f64f59);
+        }
+        h1{
+        /* text-decoration:underline 1px;*/
+            padding:40px 0px 30px 0px;
+        }
+        .table-bg {
+            background: rgba(255,255,255,0.31);
+            box-shadow: 0 4px 30px rgba(0,0,0,0.1);
+            backdrop-filter: blur(4.5px);
+            -webkit-backdrop-filter: blur(4.5px);
+        /* border: 1px solid rgba(255,255,255,1);*/
+            text-align: center;
+            border-radius: 16px;
+            margin: 120px auto;
+            width:800px;
+        }
+        tr{
+            padding:200px;
+        }
+    </style>
+</head>
+<body class="bg">
+    <form id="form1" runat="server">
+        <div>
+            <table class="table-bg">
+                <tr>
+                    <td colspan="2"><h1>Login</h1></td>
+                </tr>
+                <tr>
+                    <td><h4>Username :</h4></td>
+                    <td>
+                        <asp:TextBox ID="txtusername" CssClass="form-control my-2 w-75" runat="server"></asp:TextBox>
+                    </td>
+                </tr>
+                <tr>
+                    <td><h4>Password :</h4></td>
+                    <td>
+                        <asp:TextBox ID="txtpassword" CssClass="form-control my-2 w-75" runat="server" TextMode="Password"></asp:TextBox>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <asp:Button ID="btnlogin" runat="server" CssClass="btn btn-primary border mx-2 my-5" Text="Login" OnClick="btnlogin_Click" />
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </form>
+</body>
+</html>
