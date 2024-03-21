@@ -26,10 +26,6 @@
          #txtpassword, #txtusername{
               margin:20px 100px 20px 100px;
          }
-         #gvdairline {
-             margin-left:auto;
-             margin-right:auto;
-         }
          .btn-search{
                  background: #001b94;
                  border: 1px solid #001b94;
@@ -43,7 +39,7 @@
          .dr-flex{
               display:flex;
               justify-content:space-evenly;
-
+              margin:30px auto 15px;
          }
          .d-flex{
              display:flex;
@@ -56,7 +52,7 @@
         <div>
         <table class="table-bg">
     <tr>
-        <td colspan="2" CssClass="mt-4";>
+        <td colspan="2" CssClass="py-2";>
             <asp:RadioButtonList ID="rblways" runat="server" RepeatDirection="Horizontal" CssClass="form-control dr-flex mx-auto w-50 my-2">
                 <asp:ListItem>&nbsp; One Way &nbsp;&nbsp;</asp:ListItem>
                 <asp:ListItem>&nbsp; Round way</asp:ListItem>
@@ -65,29 +61,29 @@
     </tr>
     <tr>
         <td class="d-flex">
-             <h6>From:</h6>
+             <h4>From:</h4>
             <asp:DropDownList ID="ddlfromairport" runat="server" CssClass="form-control w-50 my-2">
             </asp:DropDownList>
         </td>
         <br />
         <td class="d-flex">
-            <h6>To :</h6>
+            <h4>To :</h4>
             <asp:DropDownList ID="ddltoairport" runat="server" CssClass="form-control w-50 my-2">
             </asp:DropDownList>
         </td>
     </tr>
     <tr>
         <td class="d-flex">
-            <h6>Departure Date :</h6> <asp:TextBox ID="txtdeparturedate" runat="server" TextMode="Date" CssClass="form-control my-2 w-50"></asp:TextBox>
+            <h4>Departure Date :</h4> <asp:TextBox ID="txtdeparturedate" runat="server" TextMode="Date" CssClass="form-control my-2 w-50"></asp:TextBox>
         </td>
         <td class="d-flex">
-            <h6>Return Date : </h6><asp:TextBox ID="txtreturndate" runat="server" TextMode="Date" CssClass="form-control my-2 w-50"></asp:TextBox>
+            <h4>Return Date : </h4><asp:TextBox ID="txtreturndate" runat="server" TextMode="Date" CssClass="form-control my-2 w-50"></asp:TextBox>
         </td>
     </tr>
     <tr>
         <td colspan="2">
             &nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:Button ID="btnsearch" runat="server" Text="Search Flight" OnClick="btnsearch_Click" class="btn-search"/>
+            <asp:Button ID="btnsearch" runat="server" Text="Search Flight" class="btn-search"/>
             &nbsp;</td>
     </tr>
          </table>
@@ -95,4 +91,3 @@
     </form>
 </body>
 </html>
-
