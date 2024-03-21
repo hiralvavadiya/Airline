@@ -58,7 +58,7 @@
                 </tr>
                 <tr>
                     <td>
-                        <asp:Button ID="btnhome" CssClass="btn-home my-5" runat="server" Text="Home" />
+                        <asp:Button ID="btnhome" CssClass="btn-home my-5" runat="server" Text="Home" OnClick="btnhome_Click1"/>
                     </td>
                 </tr>
             </table>
