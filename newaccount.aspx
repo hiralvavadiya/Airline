@@ -23,9 +23,9 @@
          tr {
              padding:200px;
          }
-         /* #txtpassword, #txtusername{
-              margin:20px 100px 20px 100px;
-         } */
+          #txtfullname, #txtemail, #txtpassword, #txtphoneno, #txtdob, #txtage, #rblgender, #txtaddress, #txtcity, #txtstate, #txtcountry{
+              margin:20px 100px 20px 130px;
+         } 
          .btn-signup, .btn-reset{
             border: 1px solid #001b94;
             background: #001b94;
@@ -34,6 +34,11 @@
             letter-spacing: .02875rem;
             font-weight: 400;
             padding: 0.75rem;
+         }
+         .dr-flex{
+             display:flex;
+             justify-content:space-evenly;
+             margin:30px auto 15px;
          }
 
     </style>
@@ -78,9 +83,9 @@
                 <tr>
                     <td>
                         <div>
-                        <asp:RadioButtonList ID="rblgender" runat="server" RepeatDirection="Horizontal" CssClass="form-control w-50 my-2">
-                            <asp:ListItem>Male</asp:ListItem>
-                            <asp:ListItem>Female</asp:ListItem>
+                        <asp:RadioButtonList ID="rblgender" runat="server" RepeatDirection="Horizontal" CssClass="form-control w-50 my-2 mx-auto dr-flex">
+                            <asp:ListItem>&nbsp;Male &nbsp;&nbsp;</asp:ListItem>
+                            <asp:ListItem>&nbsp;Female</asp:ListItem>
                         </asp:RadioButtonList>
                         </div>
                     </td>
@@ -107,8 +112,8 @@
                 </tr>
                 <tr>
                     <td>
-                        <asp:Button ID="btnsignup" CssClass="btn-signup mx-2 my-5" runat="server" Text="SignUp" OnClick="btnsignup_Click" />
-                        <asp:Button ID="btnreset" CssClass="btn-reset mx-2 my-5" runat="server" Text="Reset" OnClick="btnreset_Click" />
+                        <asp:Button ID="btnsignup" CssClass="btn-signup mx-2 my-5" runat="server" Text="SignUp" />
+                        <asp:Button ID="btnreset" CssClass="btn-reset mx-2 my-5" runat="server" Text="Reset" />
                     </td>
                 </tr>
             </table>
@@ -120,4 +125,3 @@
     <script></script>
 </body>
 </html>
-
