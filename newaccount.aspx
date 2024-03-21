@@ -112,8 +112,8 @@
                 </tr>
                 <tr>
                     <td>
-                        <asp:Button ID="btnsignup" CssClass="btn-signup mx-2 my-5" runat="server" Text="SignUp" />
-                        <asp:Button ID="btnreset" CssClass="btn-reset mx-2 my-5" runat="server" Text="Reset" />
+                        <asp:Button ID="btnsignup" CssClass="btn-signup mx-2 my-5" runat="server" Text="SignUp" OnClick="btnsignup_Click"/>
+                        <asp:Button ID="btnreset" CssClass="btn-reset mx-2 my-5" runat="server" Text="Reset" OnClick="btnreset_Click"/>
                     </td>
                 </tr>
             </table>
