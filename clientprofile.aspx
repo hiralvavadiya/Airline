@@ -4,7 +4,7 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title> Client rofile</title>
+    <title> Client Profile</title>
      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous"/>
     <style type="text/css">
         .bg{
@@ -35,28 +35,30 @@
             letter-spacing: .02875rem;
             font-weight: 400;
             padding: 0.75rem;
+            margin-right:-100px;
          }
     </style>
 </head>
 <body class="bg">
     <form id="form1" runat="server">
         <div>
-            <h1>sPERSONAL INFO :</h1>
             <br />
             <asp:Image ID="userimg" runat="server" Height="50px" Width="50px"/>
-&nbsp;
-            <br />
-            Mobile Number:<br />
-            <asp:Label ID="lblnumber" runat="server" Text="Label" CssClass="form-control w-50 my-2"></asp:Label>
-            <br />
-            Email:<br />
-            <asp:Label ID="lblemail" runat="server" Text="Label" CssClass="form-control w-50 my-2"></asp:Label>
-            <br />
-            <br />
             <table class="table-bg">
                 <tr>
+                    <td colspan="2"><h1>Personal Info</h1></td>
+                </tr>
+                <tr>
+                    <td><h4>Mobile Number:</h4></td>
+                    <td><asp:Label ID="Label1" runat="server" Text="Label" CssClass="form-control w-50 my-2"></asp:Label></td>
+                </tr>
+                <tr>
+                    <td><h4>Email:</h4></td>
+                    <td><asp:Label ID="Label2" runat="server" Text="Label" CssClass="form-control w-50 my-2"></asp:Label></td>
+                </tr>
+                <tr>
                     <td>
-                        <asp:Button ID="btnhome" CssClass="btn-home mx-2 my-5" runat="server" Text="Home" OnClick="btnhome_Click1" />
+                        <asp:Button ID="btnhome" CssClass="btn-home my-5" runat="server" Text="Home" />
                     </td>
                 </tr>
             </table>
@@ -64,5 +66,3 @@
     </form>
 </body>
 </html>
-
-
