@@ -83,7 +83,7 @@
     <tr>
         <td colspan="2">
             &nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:Button ID="btnsearch" runat="server" Text="Search Flight" class="btn-search"/>
+            <asp:Button ID="btnsearch" runat="server" Text="Search Flight" class="btn-search" OnClick="btnsearch_Click"/>
             &nbsp;</td>
     </tr>
          </table>
