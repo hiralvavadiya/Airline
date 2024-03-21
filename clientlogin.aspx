@@ -26,7 +26,7 @@
              padding:200px;
          }
          #txtpassword, #txtusername{
-              margin:20px 100px 20px 100px;
+              margin:20px 100px 20px 140px;
          }
          #gvdairline {
              margin-left:auto;
