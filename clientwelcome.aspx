@@ -42,7 +42,7 @@
                 <tr>
                     <td class="auto-style2"><h1>Welcome!</h1>
                         <br />
-&nbsp;&nbsp; <asp:Label ID="lbluser" runat="server" Text="Label"></asp:Label>
+&nbsp;&nbsp; <asp:Label ID="lbluser" runat="server" Text="Label" CssClass="form-control w-50 my-2"></asp:Label>
                         &nbsp;&nbsp;
                         <br />
                         <asp:Button ID="btnlogout" runat="server" CssClass="btn-logout mx-2 my-5" Text="Logout" OnClick="btnlogout_Click" />
